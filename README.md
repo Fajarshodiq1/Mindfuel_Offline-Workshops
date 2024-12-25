@@ -1,7 +1,5 @@
 # My Laravel Project
 
-![Project Preview](public/images/project-preview-1.png)
-
 ## Deskripsi
 
 Proyek ini dibangun menggunakan Laravel sebagai kerangka kerja utama dengan fitur modern untuk kebutuhan pengembangan web.
