@@ -194,6 +194,10 @@ class BookingTransactionResource extends Resource
                 ]),
             ]);
     }
+    public static function getTotalIncome(): int
+    {
+        return BookingTransaction::where('is_paid', true)->sum('total_amount');
+    }
 
     public static function getRelations(): array
     {

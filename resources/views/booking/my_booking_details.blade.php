@@ -10,14 +10,14 @@
       <div id="background" class="relative w-full">
           <div class="absolute w-full h-[300px] bg-[linear-gradient(0deg,#4EB6F5_0%,#5B8CE9_100%)] -z-10"></div>
       </div>
-      <section id="Content" class="w-full max-w-[1280px] mx-auto px-[52px] mt-16 mb-[100px]">
+      <section id="Content" class="w-full max-w-[1280px] mx-auto px-4 lg:px-[52px] mt-16 mb-[100px]">
           <div class="flex flex-col gap-16">
               <div class="flex flex-col items-center gap-1">
                   <p class="font-bold text-[32px] leading-[48px] capitalize text-white">Your workshop booking</p>
                   <p class="font-semibold text-white">happy Learning~</p>
               </div>
-              <main class="flex gap-8">
-                  <section id="Sidebar" class="group flex flex-col w-[420px] h-fit rounded-3xl p-8 bg-white">
+              <main class="flex flex-col lg:flex-row gap-8">
+                  <section id="Sidebar" class="group flex flex-col w-full lg:w-[420px] h-fit rounded-3xl p-8 bg-white">
                       <div class="flex flex-col gap-4">
                           <h2 class="font-Neue-Plak-bold text-xl leading-[27.5px]">Workshop Details</h2>
                           <div class="thumbnail-container relative h-[240px] rounded-xl bg-[#D9D9D9] overflow-hidden">
@@ -102,7 +102,7 @@
                           </p>
                       </label>
                   </section>
-                  <div class="flex flex-col w-[724px] gap-8">
+                  <div class="flex flex-col w-full lg:w-[724px] gap-8">
                       <div class="flex flex-col rounded-3xl bg-white overflow-hidden">
 
                           @if ($myBookingDetails->is_paid)

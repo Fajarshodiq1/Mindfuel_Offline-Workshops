@@ -76,7 +76,10 @@ class WorkshopParticipantResource extends Resource
                 ]),
             ]);
     }
-
+    public static function getTotalParticipants(): int
+{
+    return WorkshopParticipant::count();
+}
     public static function getRelations(): array
     {
         return [

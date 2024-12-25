@@ -7,185 +7,263 @@
     <header class="flex flex-col w-full max-h-[1210px] bg-[linear-gradient(0deg,_#5B8CE9_0%,_#4EB6F5_100%)] -mb-[128px]">
         <div class="flex flex-col items-center gap-6 mt-20 px-4">
             <!-- Badge -->
-            <div class="flex items-center w-fit rounded-full p-1 pr-4 gap-[10px] bg-[#DFEFFF]">
-                <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 bg-aktiv-blue overflow-hidden">
-                    <img src="{{ asset('assets/images/icons/medal-star.svg') }}" class="w-6 h-6" alt="icon">
+            <div
+                class="flex items-center w-fit rounded-full p-1 pr-4 gap-3 sm:gap-[10px] bg-[#DFEFFF] transition-all duration-300">
+                <div
+                    class="w-10 sm:w-12 h-10 sm:h-12 rounded-full flex items-center justify-center shrink-0 bg-aktiv-blue overflow-hidden">
+                    <img src="{{ asset('assets/images/icons/medal-star.svg') }}" class="w-5 sm:w-6 h-5 sm:h-6" alt="icon">
                 </div>
-                <p class="font-semibold text-lg leading-[27px] text-aktiv-blue text-center">
+                <p class="font-semibold text-sm sm:text-lg leading-[21px] sm:leading-[27px] text-aktiv-blue text-center">
                     #1 Best Workshop in Indonesia
                 </p>
             </div>
             <!-- Heading -->
             <h1
-                class="w-full max-w-[800px] text-center text-[32px] sm:text-[42px] leading-[42px] sm:leading-[58.8px] text-white font-['Neue_Plak_bold'] capitalize">
+                class="w-full max-w-[800px] text-center text-[24px] sm:text-[32px] lg:text-[42px] leading-[32px] sm:leading-[42px] lg:leading-[58.8px] text-white font-['Neue_Plak_bold'] capitalize">
                 Revitalize your daily routine with<br class="hidden sm:block"> powerful productivity 💪
             </h1>
             <!-- Button -->
-            <div class="flex w-fit rounded-full p-4 bg-[#FFFFFF17]">
+            <div class="flex w-fit rounded-full p-2 sm:p-4 bg-[#FFFFFF17] transition-all duration-300">
                 <a href="#"
-                    class="flex items-center rounded-full px-6 sm:px-9 h-[48px] sm:h-[56px] gap-[10px] bg-aktiv-orange">
-                    <span class="font-semibold text-white">Get Started ></span>
+                    class="flex items-center rounded-full px-4 sm:px-6 lg:px-9 h-[40px] sm:h-[48px] lg:h-[56px] gap-2 sm:gap-[10px] bg-aktiv-orange hover:bg-aktiv-blue transition-all duration-300">
+                    <span class="font-semibold text-xs sm:text-base lg:text-lg text-white">Get Started ></span>
                 </a>
             </div>
         </div>
         <!-- Background Image -->
         <div class="flex w-full overflow-hidden mt-6 sm:mt-12">
             <img src="{{ asset('assets/images/backgrounds/wadedan_A_cheerful_workshop_scene_showing_a_man_presenting_his__f 1.png') }}"
-                class="w-full h-[200px] sm:h-full object-cover object-top" alt="">
+                class="w-full h-[160px] sm:h-[200px] md:h-[300px] lg:h-full object-cover object-top" alt="">
         </div>
     </header>
     <section id="Goals" class="w-full max-w-[1280px] mx-auto px-5 lg:px-[52px] z-10">
         <div class="bg-[linear-gradient(0deg,rgba(230,231,235,0)_0%,#E6E7EB_100%)] rounded-3xl p-[1px]">
-            <div class="grid grid-rows-1 lg:grid-cols-4 items-center gap-6 rounded-3xl p-[32px_52px] bg-white">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center gap-6 rounded-3xl p-8 lg:p-[32px_52px] bg-white">
+                <!-- Heading -->
                 <div class="flex flex-col gap-3 text-center lg:text-start">
-                    <h2 class="font-['Neue_Plak_bold'] text-2xl lg:text-[32px] leading-[41.6px]">What awaits you <br>after
-                        you join 🧐
+                    <h2
+                        class="font-['Neue_Plak_bold'] text-2xl sm:text-3xl lg:text-[32px] leading-[30px] sm:leading-[38px] lg:leading-[41.6px]">
+                        What awaits you <br class="hidden sm:block">after you join 🧐
                     </h2>
-                    <p class="font-medium text-aktiv-grey">Our programs are designed to <br> develop any ages 😉 </p>
+                    <p class="font-medium text-aktiv-grey text-sm sm:text-base">Our programs are designed to <br> develop
+                        any ages 😉 </p>
                 </div>
-                <div class="flex flex-col items-center rounded-2xl border border-[#E6E7EB] p-[18px] gap-3 text-center">
-                    <img src="{{ asset('assets/images/icons/More Creativity.svg') }}" class="w-[64px]" alt="icon">
-                    <h3 class="font-semibold text-lg leading-[27px]">More Creativity</h3>
-                    <p class="font-medium text-aktiv-grey">Lorem Ipsum itu adalah sebusah text contoh</p>
+                <!-- Card 1 -->
+                <div
+                    class="flex flex-col items-center rounded-2xl border border-[#E6E7EB] p-4 lg:p-[18px] gap-3 text-center">
+                    <img src="{{ asset('assets/images/icons/More Creativity.svg') }}" class="w-12 sm:w-14 lg:w-[64px]"
+                        alt="icon">
+                    <h3 class="font-semibold text-base sm:text-lg leading-[24px] sm:leading-[27px]">More Creativity</h3>
+                    <p class="font-medium text-aktiv-grey text-sm sm:text-base">Lorem Ipsum itu adalah sebusah text contoh
+                    </p>
                 </div>
-                <div class="flex flex-col items-center rounded-2xl border border-[#E6E7EB] p-[18px] gap-3 text-center">
-                    <img src="{{ asset('assets/images/icons/Career Planning.svg') }}" class="w-[64px]" alt="icon">
-                    <h3 class="font-semibold text-lg leading-[27px]">Career Planning</h3>
-                    <p class="font-medium text-aktiv-grey">Lorem Ipsum itu adalah sebusah text contoh</p>
+                <!-- Card 2 -->
+                <div
+                    class="flex flex-col items-center rounded-2xl border border-[#E6E7EB] p-4 lg:p-[18px] gap-3 text-center">
+                    <img src="{{ asset('assets/images/icons/Career Planning.svg') }}" class="w-12 sm:w-14 lg:w-[64px]"
+                        alt="icon">
+                    <h3 class="font-semibold text-base sm:text-lg leading-[24px] sm:leading-[27px]">Career Planning</h3>
+                    <p class="font-medium text-aktiv-grey text-sm sm:text-base">Lorem Ipsum itu adalah sebusah text contoh
+                    </p>
                 </div>
-                <div class="flex flex-col items-center rounded-2xl border border-[#E6E7EB] p-[18px] gap-3 text-center">
-                    <img src="{{ asset('assets/images/icons/Good Communication.svg') }}" class="w-[64px]" alt="icon">
-                    <h3 class="font-semibold text-lg leading-[27px]">Good Communication</h3>
-                    <p class="font-medium text-aktiv-grey">Lorem Ipsum itu adalah sebusah text contoh</p>
+                <!-- Card 3 -->
+                <div
+                    class="flex flex-col items-center rounded-2xl border border-[#E6E7EB] p-4 lg:p-[18px] gap-3 text-center">
+                    <img src="{{ asset('assets/images/icons/Good Communication.svg') }}" class="w-12 sm:w-14 lg:w-[64px]"
+                        alt="icon">
+                    <h3 class="font-semibold text-base sm:text-lg leading-[24px] sm:leading-[27px]">Good Communication</h3>
+                    <p class="font-medium text-aktiv-grey text-sm sm:text-base">Lorem Ipsum itu adalah sebusah text contoh
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+    {{-- <section class="py-24 relative w-full max-w-[1280px] mx-auto px-5 lg:px-[52px] z-10">
+        <div class="flex flex-col gap-8">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <h2
+                    class="font-['Neue_Plak_bold'] text-xl sm:text-2xl lg:text-[32px] leading-[30px] sm:leading-[38px] lg:leading-[44.54px] capitalize">
+                    Why choose 🌟 <br class="hidden md:block"> Mindfuel?
+                </h2>
+            </div>
+            <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+                <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
+                    <div
+                        class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
+                        <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+                            <img class=" rounded-xl object-cover"
+                                src="https://plus.unsplash.com/premium_photo-1679547202440-356042e564a3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="about Us image" />
+                        </div>
+                        <img class="sm:ml-0 ml-auto rounded-xl object-cover"
+                            src="https://plus.unsplash.com/premium_photo-1661326274569-dd8337c5e6cf?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="about Us image" />
+                    </div>
+                    <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+                        <div class="w-full flex-col justify-center items-start gap-8 flex">
+                            <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+                                <h2
+                                    class="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                                    Lorem ipsum dolor sit amet.</h2>
+                                <p class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit sed dolor provident
+                                    facilis beatae, error, architecto atque distinctio ipsa quo quidem voluptatibus aliquid
+                                    dolore officia inventore asperiores nostrum veritatis impedit pariatur quod sequi!
+                                    Officiis odit laudantium consectetur, delectus fugit mollitia id tenetur rerum non
+                                    voluptas ea tempore, voluptate dolorum?</p>
+                            </div>
+                            <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
+                                <div class="flex-col justify-start items-start inline-flex">
+                                    <h3 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">33+</h3>
+                                    <h6 class="text-gray-500 text-base font-normal leading-relaxed">Years of Experience</h6>
+                                </div>
+                                <div class="flex-col justify-start items-start inline-flex">
+                                    <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">125+</h4>
+                                    <h6 class="text-gray-500 text-base font-normal leading-relaxed">Successful Projects</h6>
+                                </div>
+                                <div class="flex-col justify-start items-start inline-flex">
+                                    <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">52+</h4>
+                                    <h6 class="text-gray-500 text-base font-normal leading-relaxed">Happy Clients</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> --}}
     <section id="Categories" class="w-full max-w-[1280px] mx-auto px-5 lg:px-[52px] mt-[100px]">
         <div class="flex flex-col gap-8">
-            <div class="flex items-center justify-between">
-                <h2 class="font-Neue-Plak-bold text-xl lg:text-[32px] leading-[44.54px] capitalize">We have several 🌟 <br>
-                    workshop
-                    categories</h2>
-                <a href="#" class="flex items-center rounded-full py-4 px-4 lg:px-6 h-[56px] gap-3 bg-aktiv-orange">
+            <!-- Header Section -->
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <h2
+                    class="font-['Neue_Plak_bold'] text-xl sm:text-2xl lg:text-[32px] leading-[30px] sm:leading-[38px] lg:leading-[44.54px] capitalize">
+                    We have several 🌟 <br class="hidden md:block"> workshop categories
+                </h2>
+                {{-- <a href="#"
+                    class="flex items-center rounded-full py-4 px-6 gap-3 bg-aktiv-orange hover:bg-aktiv-orange-dark transition">
                     <span class="font-semibold text-white hidden md:block">See All</span>
                     <span
-                        class="w-6 h-6 rounded-full bg-white text-center align-middle text-aktiv-orange font-bold">></span>
-                </a>
+                        class="w-6 h-6 rounded-full bg-white text-center align-middle text-aktiv-orange font-bold">&gt;</span>
+                </a> --}}
             </div>
-            <div class="grid grid-rows-1 lg:grid-cols-4 gap-6">
+            <!-- Categories Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 @forelse ($categories as $itemCategory)
-                    <a href="{{ route('front.category', $itemCategory->slug) }}" class="card">
-                        <div class="flex items-center h-full rounded-3xl p-5 pr-1 gap-3 bg-white">
-                            <img src="{{ Storage::url($itemCategory->icon) }}" class="w-[56px] h-[56px] flex shrink-0"
+                    <a href="{{ route('front.category', $itemCategory->slug) }}" class="card hover:shadow-lg transition">
+                        <div class="flex items-center h-full rounded-3xl p-5 gap-3 bg-white">
+                            <img src="{{ Storage::url($itemCategory->icon) }}" class="w-[56px] h-[56px] flex-shrink-0"
                                 alt="icon">
-                            <div class="flex flex-col gap-[2px] overflow-hidden">
-                                <h3 class="font-semibold text-lg leading-[27px] break-words">{{ $itemCategory->name }}</h3>
-                                <p class="font-medium text-aktiv-grey">{{ $itemCategory->tagline }}</p>
+                            <div class="flex flex-col gap-1 overflow-hidden">
+                                <h3 class="font-semibold text-lg sm:text-xl leading-[24px] sm:leading-[27px] break-words">
+                                    {{ $itemCategory->name }}
+                                </h3>
+                                <p class="font-medium text-sm sm:text-base text-aktiv-grey">{{ $itemCategory->tagline }}</p>
                             </div>
                         </div>
                     </a>
                 @empty
-                    <p>Belum ada data category</p>
+                    <p class="text-center text-aktiv-grey">Belum ada data category</p>
                 @endforelse
-
             </div>
         </div>
     </section>
+
     <section id="Trending" class="w-full max-w-[1280px] mx-auto px-5 lg:px-[52px] mt-[100px]">
         <div class="flex flex-col gap-8">
-            <div class="flex items-center justify-between">
-                <h2 class="font-Neue-Plak-bold text-[20px] lg:text-[32px] leading-[44.54px] capitalize">Highly sought-after
-                    🔥<br>workshops are trending </h2>
-                <a href="#" class="flex items-center rounded-full py-4 px-4 lg:px-6 h-[56px] gap-3 bg-aktiv-orange">
-                    <span class="font-semibold text-white hidden md:block">See All</span>
-                    <span
-                        class="w-6 h-6 rounded-full bg-white text-center align-middle text-aktiv-orange font-bold">></span>
-                </a>
+            <!-- Header Section -->
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <h2
+                    class="font-['Neue_Plak_bold'] text-[20px] sm:text-[24px] lg:text-[32px] leading-[30px] sm:leading-[38px] lg:leading-[44.54px] capitalize">
+                    Highly sought-after 🔥<br class="hidden md:block"> workshops are trending
+                </h2>
             </div>
-            <div class="grid grid-rows-1 lg:grid-cols-3 gap-6">
+            <!-- Workshops Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 @forelse ($newWorkshops as $itemNewWorkshop)
-                    <a href="{{ route('front.details', $itemNewWorkshop->slug) }}" class="card">
-                        <div class="flex flex-col h-full justify-between rounded-3xl p-6 gap-9 bg-white">
-                            <div class="flex flex-col gap-[18px]">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-16 h-16 rounded-full flex shrink-0 overflow-hidden">
-                                        <img src="{{ Storage::url($itemNewWorkshop->instructor->avatar) }}"
-                                            class="w-full h-full object-cover" alt="avatar">
-                                    </div>
-                                    <div class="flex flex-col gap-[2px]">
-                                        <p class="font-semibold text-lg leading-[27px]">
-                                            {{ $itemNewWorkshop->instructor->name }}</p>
-                                        <p class="font-medium text-aktiv-grey">
-                                            {{ $itemNewWorkshop->instructor->occupation }}</p>
-                                    </div>
+                    <a href="{{ route('front.details', $itemNewWorkshop->slug) }}" class="card hover:shadow-lg transition">
+                        <div class="flex flex-col h-full justify-between rounded-3xl p-6 gap-6 bg-white">
+                            <!-- Instructor Details -->
+                            <div class="flex items-center gap-3">
+                                <div class="w-16 h-16 rounded-full overflow-hidden">
+                                    <img src="{{ Storage::url($itemNewWorkshop->instructor->avatar) }}"
+                                        class="w-full h-full object-cover" alt="avatar">
                                 </div>
-                                <div class="thumbnail-container relative h-[200px] rounded-xl bg-[#D9D9D9] overflow-hidden">
-                                    <img src="{{ Storage::url($itemNewWorkshop->thumbnail) }}"
-                                        class="w-full h-full object-cover" alt="thumbnail">
-                                    @if ($itemNewWorkshop->is_open)
-                                        @if ($itemNewWorkshop->has_started)
-                                            <div
-                                                class="absolute top-3 left-3 flex items-center rounded-full py-3 px-5 gap-1 bg-aktiv-orange text-white z-10">
-                                                <img src="{{ asset('assets/images/icons/timer-start.svg') }}"
-                                                    class="w-6 h-6" alt="icon">
-                                                <span class="font-semibold">STARTED</span>
-                                            </div>
-                                        @else
-                                            <div
-                                                class="absolute top-3 left-3 flex items-center rounded-full py-3 px-5 gap-1 bg-aktiv-green text-white z-10">
-                                                <img src="{{ asset('assets/images/icons/medal-star.svg') }}"
-                                                    class="w-6 h-6" alt="icon">
-                                                <span class="font-semibold">OPEN</span>
-                                            </div>
-                                        @endif
-                                    @else
-                                        <div
-                                            class="absolute top-3 left-3 flex items-center rounded-full py-3 px-5 gap-1 bg-aktiv-red text-white z-10">
-                                            <img src="{{ asset('assets/images/icons/sand-timer.svg') }}" class="w-6 h-6"
-                                                alt="icon">
-                                            <span class="font-semibold">CLOSED</span>
-                                        </div>
-                                    @endif
-                                </div>
-                                <div class="card-detail flex flex-col gap-2">
-                                    <div class="flex items-center gap-3">
-                                        <div class="flex items-center gap-1">
-                                            <img src="{{ asset('assets/images/icons/calendar-2.svg') }}"
-                                                class="w-6 h-6 flex shrink-0" alt="icon">
-                                            <span
-                                                class="font-medium text-aktiv-grey">{{ $itemNewWorkshop->started_at->format('M d, Y') }}</span>
-                                        </div>
-                                        <div class="flex items-center gap-1">
-                                            <img src="{{ asset('assets/images/icons/timer.svg') }}"
-                                                class="w-6 h-6 flex shrink-0" alt="icon">
-                                            <span
-                                                class="font-medium text-aktiv-grey">{{ $itemNewWorkshop->time_at->format('h:i A') }}</span>
-                                        </div>
-                                    </div>
-                                    <h3
-                                        class="title min-h-[56px] font-semibold text-xl line-clamp-2 hover:line-clamp-none">
-                                        {{ $itemNewWorkshop->name }}</h3>
-                                    <p class="font-medium text-aktiv-grey">{{ $itemNewWorkshop->category->name }}</p>
+                                <div class="flex flex-col gap-1">
+                                    <p class="font-semibold text-base md:text-lg leading-[27px]">
+                                        {{ $itemNewWorkshop->instructor->name }}</p>
+                                    <p class="font-medium text-sm md:text-base text-aktiv-grey">
+                                        {{ $itemNewWorkshop->instructor->occupation }}
+                                    </p>
                                 </div>
                             </div>
+                            <!-- Workshop Thumbnail -->
+                            <div class="relative h-[200px] rounded-xl bg-[#D9D9D9] overflow-hidden">
+                                <img src="{{ Storage::url($itemNewWorkshop->thumbnail) }}"
+                                    class="w-full h-full object-cover" alt="thumbnail">
+                                @if ($itemNewWorkshop->is_open)
+                                    <div
+                                        class="absolute top-3 left-3 flex items-center rounded-full py-2 px-4 gap-2 text-white z-10
+                                    {{ $itemNewWorkshop->has_started ? 'bg-aktiv-orange' : 'bg-aktiv-green' }}">
+                                        <img src="{{ asset($itemNewWorkshop->has_started ? 'assets/images/icons/timer-start.svg' : 'assets/images/icons/medal-star.svg') }}"
+                                            class="w-6 h-6" alt="icon">
+                                        <span class="font-semibold text-sm md:text-base">
+                                            {{ $itemNewWorkshop->has_started ? 'STARTED' : 'OPEN' }}
+                                        </span>
+                                    </div>
+                                @else
+                                    <div
+                                        class="absolute top-3 left-3 flex items-center rounded-full py-2 px-4 gap-2 bg-aktiv-red text-white z-10">
+                                        <img src="{{ asset('assets/images/icons/sand-timer.svg') }}" class="w-6 h-6"
+                                            alt="icon">
+                                        <span class="font-semibold">CLOSED</span>
+                                    </div>
+                                @endif
+                            </div>
+                            <!-- Workshop Details -->
+                            <div class="flex flex-col gap-3">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex items-center gap-2">
+                                        <img src="{{ asset('assets/images/icons/calendar-2.svg') }}"
+                                            class="w-3 md:w-5 h-3 md:h-5" alt="icon">
+                                        <span class="font-medium text-aktiv-grey text-xs md:text-base">
+                                            {{ $itemNewWorkshop->started_at->format('M d, Y') }}
+                                        </span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <img src="{{ asset('assets/images/icons/timer.svg') }}"
+                                            class="w-3 md:w-5 h-3 md:h-5" alt="icon">
+                                        <span class="font-medium text-aktiv-grey text-xs md:text-base">
+                                            {{ $itemNewWorkshop->time_at->format('h:i A') }}
+                                        </span>
+                                    </div>
+                                </div>
+                                <h3 class="font-semibold text-xl leading-6 line-clamp-2 hover:line-clamp-none transition">
+                                    {{ $itemNewWorkshop->name }}
+                                </h3>
+                                <p class="font-medium text-aktiv-grey text-sm md:text-base">
+                                    {{ $itemNewWorkshop->category->name }}</p>
+                            </div>
+                            <!-- Pricing -->
                             <div class="flex items-center justify-between">
-                                <div class="flex items-center gap-[6px]">
+                                <div class="flex items-center gap-2">
                                     <p class="font-semibold text-2xl leading-8 text-aktiv-red">Rp
                                         {{ number_format($itemNewWorkshop->price, 0, '.', ',') }}</p>
                                     <p class="font-medium text-aktiv-grey">/person</p>
                                 </div>
-                                <img src="{{ asset('assets/images/icons/arrow-right.svg') }}"
-                                    class="w-12 h-12 flex shrink-0" alt="icon">
+                                <img src="{{ asset('assets/images/icons/arrow-right.svg') }}" class="w-10 h-10"
+                                    alt="icon">
                             </div>
                         </div>
                     </a>
                 @empty
-                    <p>Belum ada data workshop terbaru</p>
+                    <p class="text-center text-aktiv-grey">Belum ada data workshop terbaru</p>
                 @endforelse
             </div>
         </div>
     </section>
+
     <div class="w-full py-[52px] px-5 bg-white mt-[100px]">
         <section id="Testimony">
             <div class="flex flex-col gap-8">
@@ -194,12 +272,12 @@
                         people 💗<br>
                         say about our workshop
                     </h2>
-                    <a href="#"
+                    {{-- <a href="#"
                         class="flex items-center rounded-full py-4 px-4 lg:px-6 h-[56px] gap-3 bg-aktiv-orange">
                         <span class="font-semibold text-white hidden lg:block">See All</span>
                         <span
                             class="w-6 h-6 rounded-full bg-white text-center align-middle text-aktiv-orange font-bold">></span>
-                    </a>
+                    </a> --}}
                 </div>
                 <div class="swiper w-full">
                     <div class="swiper-wrapper">
@@ -287,79 +365,86 @@
         </section>
         <section id="Benefits" class="w-full max-w-[1280px] mx-auto px-5 lg:px-[52px] mt-[100px]">
             <div class="flex flex-col gap-8">
+                <!-- Header -->
                 <div class="flex items-center justify-center">
-                    <h2 class="font-Neue-Plak-bold text-[32px] leading-[44.54px] capitalize text-center">Get acquainted
-                        with us! 🙌🏻</h2>
+                    <h2
+                        class="font-['Neue_Plak_bold'] text-[24px] sm:text-[28px] lg:text-[32px] leading-[30px] sm:leading-[38px] lg:leading-[44.54px] capitalize text-center">
+                        Get acquainted with us! 🙌🏻
+                    </h2>
                 </div>
-                <div class="grid grid-rows-1 lg:grid-cols-3 gap-6">
+                <!-- Benefits Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Benefit Card -->
                     <div
-                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white">
+                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white hover:shadow-lg transition">
                         <div class="flex items-center gap-3">
                             <img src="{{ asset('assets/images/icons/In-Depth Learning from Experts Instructor.png') }}"
-                                class="flex w-[56px] h-[56px] shrink-0" alt="icon">
-                            <h3 class="font-semibold text-lg leading-[27px]">In-Depth Learning from Experts Instructor</h3>
+                                class="w-[56px] h-[56px]" alt="icon">
+                            <h3 class="font-semibold md:text-lg leading-[27px]">In-Depth Learning from Experts
+                                Instructor</h3>
                         </div>
-                        <p class="font-medium leading-[25.6px] text-aktiv-grey">We feature instructors with strong
+                        <p class="font-medium text-aktiv-grey leading-[25.6px]">We feature instructors with strong
                             field-specific expertise.</p>
                     </div>
+                    <!-- Tangible Results -->
                     <div
-                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white">
+                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white hover:shadow-lg transition">
                         <div class="flex items-center gap-3">
-                            <img src="{{ asset('assets/images/icons/Tangible Results.png') }}"
-                                class="flex w-[56px] h-[56px] shrink-0" alt="icon">
-                            <h3 class="font-semibold text-lg leading-[27px]">Tangible Results</h3>
+                            <img src="{{ asset('assets/images/icons/Tangible Results.png') }}" class="w-[56px] h-[56px]"
+                                alt="icon">
+                            <h3 class="font-semibold md:text-lg leading-[27px]">Tangible Results</h3>
                         </div>
-                        <p class="font-medium leading-[25.6px] text-aktiv-grey">Our students are highly engaged and
+                        <p class="font-medium text-aktiv-grey leading-[25.6px]">Our students are highly engaged and
                             supportive of our community.</p>
                     </div>
+                    <!-- Supportive Learning Environment -->
                     <div
-                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white">
+                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white hover:shadow-lg transition">
                         <div class="flex items-center gap-3">
                             <img src="{{ asset('assets/images/icons/Supportive Learning Environment.png') }}"
-                                class="flex w-[56px] h-[56px] shrink-0" alt="icon">
-                            <h3 class="font-semibold text-lg leading-[27px]">Supportive Learning Environment</h3>
+                                class="w-[56px] h-[56px]" alt="icon">
+                            <h3 class="font-semibold md:text-lg leading-[27px]">Supportive Learning Environment</h3>
                         </div>
-                        <p class="font-medium leading-[25.6px] text-aktiv-grey">We feature instructors with strong
+                        <p class="font-medium text-aktiv-grey leading-[25.6px]">We feature instructors with strong
                             field-specific expertise.</p>
                     </div>
+                    <!-- Community Support -->
                     <div
-                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white">
+                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white hover:shadow-lg transition">
                         <div class="flex items-center gap-3">
-                            <img src="{{ asset('assets/images/icons/community support.png') }}"
-                                class="flex w-[56px] h-[56px] shrink-0" alt="icon">
-                            <h3 class="font-semibold text-lg leading-[27px]">Community Support</h3>
+                            <img src="{{ asset('assets/images/icons/community support.png') }}" class="w-[56px] h-[56px]"
+                                alt="icon">
+                            <h3 class="font-semibold md:text-lg leading-[27px]">Community Support</h3>
                         </div>
-                        <p class="font-medium leading-[25.6px] text-aktiv-grey">We feature instructors with strong
+                        <p class="font-medium text-aktiv-grey leading-[25.6px]">We feature instructors with strong
                             field-specific expertise.</p>
                     </div>
+                    <!-- Networking Opportunities -->
                     <div
-                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white">
+                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white hover:shadow-lg transition">
                         <div class="flex items-center gap-3">
                             <img src="{{ asset('assets/images/icons/Networking Opportunities With Other.png') }}"
-                                class="flex w-[56px] h-[56px] shrink-0" alt="icon">
-                            <h3 class="font-semibold text-lg leading-[27px]">Networking Opportunities With Other</h3>
+                                class="w-[56px] h-[56px]" alt="icon">
+                            <h3 class="font-semibold md:text-lg leading-[27px]">Networking Opportunities With Other</h3>
                         </div>
-                        <p class="font-medium leading-[25.6px] text-aktiv-grey">We feature instructors with strong
+                        <p class="font-medium text-aktiv-grey leading-[25.6px]">We feature instructors with strong
                             field-specific expertise.</p>
                     </div>
+                    <!-- Learning Flexibility -->
                     <div
-                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white">
+                        class="flex flex-col h-full justify-between rounded-3xl border border-[#E6E7EB] p-6 gap-3 bg-white hover:shadow-lg transition">
                         <div class="flex items-center gap-3">
                             <img src="{{ asset('assets/images/icons/Learning Flexibility.png') }}"
-                                class="flex w-[56px] h-[56px] shrink-0" alt="icon">
-                            <h3 class="font-semibold text-lg leading-[27px]">Learning Flexibility</h3>
+                                class="w-[56px] h-[56px]" alt="icon">
+                            <h3 class="font-semibold md:text-lg leading-[27px]">Learning Flexibility</h3>
                         </div>
-                        <p class="font-medium leading-[25.6px] text-aktiv-grey">We offer a variety of workshops that you
+                        <p class="font-medium text-aktiv-grey leading-[25.6px]">We offer a variety of workshops that you
                             can learn from every day.</p>
                     </div>
                 </div>
-                <a href="#" class="flex items-center rounded-full py-4 px-6 h-[56px] gap-3 bg-aktiv-orange mx-auto">
-                    <span class="font-semibold text-white">Learn More</span>
-                    <span
-                        class="w-6 h-6 rounded-full bg-white text-center align-middle text-aktiv-orange font-bold">></span>
-                </a>
             </div>
         </section>
+
     </div>
     <div id="Join-Now" class="relative w-full overflow-hidden">
         <img src="{{ asset('assets/images/backgrounds/lines.svg') }}" class="w-full h-full object-cover absolute"
@@ -385,7 +470,7 @@
             </div>
         </div>
     </div>
-    <footer class="w-full p-[52px] bg-white">
+    <footer class="w-full p-[52px] bg-white hidden lg:block">
         <div class="flex flex-col w-full max-w-[1176px] mx-auto gap-8">
             <div class="flex flex-col items-center gap-4">
                 <img src="{{ asset('assets/images/logos/Logo-blue.svg') }}" class="h-10" alt="logo">
